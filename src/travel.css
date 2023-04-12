@@ -132,7 +132,6 @@ footer a:hover {
 
 .grid {
   display: grid;
-  grid-column-gap: 64px;
 }
 
 .grid-2-columns {
@@ -170,6 +169,7 @@ footer a:hover {
 
 .about-riga-contents {
   background: var(--bg-secondary-color);
+  grid-column-gap: 64px;
 }
 
 .about-riga-contents h2 {
@@ -188,6 +188,16 @@ footer a:hover {
 
 .restaurants-contents {
   background: var(--bg-primary-color);
+}
+
+.restaurants-button {
+  background: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 16px 96px;
+  text-transform: uppercase;
+  color: white;
 }
 
 .gallery-contents {
