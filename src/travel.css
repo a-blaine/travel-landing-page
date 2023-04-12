@@ -164,6 +164,10 @@ footer a:hover {
   margin-bottom: 50px;
 }
 
+.img-fluid {
+  max-width: 100%;
+}
+
 .about-riga-contents {
   background: var(--bg-secondary-color);
 }
@@ -180,10 +184,6 @@ footer a:hover {
 .about-riga-contents p {
   opacity: 0.5;
   font-size: 16px;
-}
-
-.about-riga-contents img {
-  width: 100%;
 }
 
 .restaurants-contents {
