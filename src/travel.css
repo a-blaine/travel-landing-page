@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
 
+:root {
+  --bg-primary-color: #171717;
+  --bg-secondary-color: #101010;
+}
+
 body {
   font-family: Poppins, sans-serif;
   margin: 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -20,7 +30,6 @@ header {
 header h1,
 h2,
 h3 {
-  line-height: 1.5;
   margin: 0;
 }
 
@@ -44,19 +53,25 @@ header a {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 1.5;
   letter-spacing: 3px;
   background-color: #ffffff;
-  text-decoration: none;
   padding: 16px 32px;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  color: #272044;
+  color: var(--bg-primary-color);
   display: inline-block;
   margin-top: 32px;
 }
 
 header a:hover {
   cursor: pointer;
+}
+
+main {
+  color: white;
+}
+
+section {
+  padding: 100px 170px;
 }
 
 footer {
@@ -66,6 +81,9 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+footer section {
   padding: 100px 90px;
 }
 
@@ -77,15 +95,14 @@ ul {
 footer h3 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.5;
   opacity: 1;
   margin-bottom: 16px;
 }
 
-footer p {
+footer p,
+li {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
 }
 
 footer ul {
@@ -99,7 +116,6 @@ footer li {
 }
 
 footer a {
-  text-decoration: none;
   color: white;
   transition: all 200ms ease;
 }
@@ -116,8 +132,53 @@ footer a:hover {
 
 .grid {
   display: grid;
+  grid-column-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-1fr-2fr-2fr {
   grid-template-columns: 1fr 2fr 2fr;
-  grid-column-gap: 66px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 16px;
+  margin-bottom: 7px;
+  opacity: 0.3;
+}
+
+.sub-heading {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.about-riga-contents {
+  background: var(--bg-secondary-color);
+}
+
+.about-riga-contents h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.about-riga-contents img {
+  width: 100%;
+}
+
+.about-riga-contents p {
+  opacity: 0.5;
+}
+
+.restaurants-contents {
+  background: var(--bg-primary-color);
+}
+
+.gallery-contents {
+  background-color: var(--bg-secondary-color);
 }
 
 .github-link {
@@ -130,7 +191,7 @@ footer a:hover {
   font-weight: normal;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 90px 5px;
   }
@@ -150,5 +211,24 @@ footer a:hover {
     font-size: 10px;
     padding: 12px 28px;
     margin-top: 16px;
+  }
+
+  footer {
+    padding: 50px 45px;
+  }
+
+  footer h3 {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  footer p,
+  li {
+    font-size: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
