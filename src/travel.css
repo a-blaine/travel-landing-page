@@ -29,7 +29,9 @@ header {
 
 header h1,
 h2,
-h3 {
+h3,
+main h4,
+h5 {
   margin: 0;
 }
 
@@ -68,6 +70,16 @@ header a:hover {
 
 main {
   color: white;
+}
+
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main h5 {
+  font-size: 13px;
+  font-weight: 700;
 }
 
 section {
@@ -145,6 +157,7 @@ footer a:hover {
 
 .grid-3-columns-1fr-2fr-2fr {
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
 
 .section-title {
@@ -190,14 +203,42 @@ footer a:hover {
   background: var(--bg-primary-color);
 }
 
-.restaurants-button {
+.card {
+  background: #252525;
+}
+
+.card-body {
+  padding: 24px 32px;
+}
+
+.card-footer {
+  padding: 48px 30px 30px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.card-header img {
+  display: block;
+  height: 200px;
+  width: 200px;
+}
+
+.card-button {
   background: #000000;
+  color: white;
+  display: block;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
-  padding: 16px 96px;
+  padding: 16px;
+  text-align: center;
   text-transform: uppercase;
-  color: white;
 }
 
 .gallery-contents {
