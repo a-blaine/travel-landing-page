@@ -248,12 +248,6 @@ footer a:hover {
   background-color: var(--bg-secondary-color);
 }
 
-.gallery-contents img {
-  width: 370px;
-  height: 370px;
-  object-fit: fill;
-}
-
 .github-link {
   color: red;
   font-weight: 900;
